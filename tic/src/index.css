@@ -1,0 +1,8 @@
+.board-ui{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.square{
+  padding: 20px;
+}
