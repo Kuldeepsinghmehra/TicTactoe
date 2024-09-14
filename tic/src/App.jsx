@@ -1,21 +1,41 @@
+import { useState } from "react"
+
+
+
+function Square(props)
+{
+  const [value,setValue]=useState(props.value)
+  function makeX()
+  {
+    setValue("X")
+  }
+  return(
+    <>
+    <button className="square" onClick={makeX}>{value}</button>
+    </>
+  )
+}
 export  function Board()
 {
   return(
     <>
     <div className="board-ui">
-    <button className="square">1</button>
-      <button className="square">2</button>
-      <button className="square">3</button>
+      <Square value="1" />
+      <Square value="2" />
+      <Square value="3"/>
+    
     </div>
     <div className="board-ui">
-    <button className="square">4</button>
-      <button className="square">5</button>
-      <button className="square">6</button>
+    <Square value="4" />
+    <Square value="5" />
+    <Square value="6" />
+   
     </div>
     <div className="board-ui">
-    <button className="square">7</button>
-      <button className="square">8</button>
-      <button className="square">9</button>
+    <Square value="7"/>
+    <Square value="8"/>
+    <Square value="9"/>
+
     </div>
     
     </>
