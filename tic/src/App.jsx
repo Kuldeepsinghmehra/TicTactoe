@@ -8,7 +8,7 @@ function Square()
   const [square,setSquare]=useState(Array(9).fill(null))
   function makeX()
   {
-    setValue("X")
+    setValue("x")
   }
   return(
     <>
